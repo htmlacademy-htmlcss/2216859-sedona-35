@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Ярослав Емельяненко](https://up.htmlacademy.ru/htmlcss/35/user/2216859).
-* Наставник: `Неизвестно`.
+- Студент: [Ярослав Емельяненко](https://up.htmlacademy.ru/htmlcss/35/user/2216859).
+- Наставник: [Дмитрий Железцов] (https://htmlacademy.ru/profile/sench).
 
 ---
 
