@@ -8,9 +8,7 @@
   <body>
     <header class="page-header">
       <nav class="nav-panel">
-        <a class="header-logo" href="index.html">
-          <img src="" alt="sedona-logo" />
-        </a>
+        <img src="" alt="sedona-logo" />
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html"> Главная</a>
@@ -29,7 +27,7 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#"
-              ><span class="visully-hidden">Поиск</span></a
+              ><span class="visually-hidden">Поиск</span></a
             >
           </li>
           <li class="navigation-item">
@@ -153,9 +151,11 @@
           <button class="button" type="reset">Сбросить</button>
         </form>
       </section>
-      <p class="search-results">Найдено гостиниц: 38</p>
-      <select class="secelt-control" aria-label="Сортировка">
-        <option value="polular">Сначала популярные</option>
+      <p class="search-results">
+        Найдено гостиниц:<span class="search-result">38</span>
+      </p>
+      <select class="select-control" aria-label="Сортировка">
+        <option value="popular">Сначала популярные</option>
         <option value="cheap">Сначала дешевые</option>
         <option value="expensive">Сначала дорогие</option>
       </select>
@@ -174,8 +174,8 @@
             <img class="hotel-card-image" src="#" alt="Amara Resort and Spa" />
             <h3 class="hotel-card-title">Amara Resort &amp; Spa</h3>
           </a>
-          <p>Гостиница</p>
-          <p>От 4000 р</p>
+          <p class="housing-type">Гостиница</p>
+          <p class="housing-price">От 4000 р</p>
           <a class="more button" href="#">Подробнее</a>
           <button class="button-favorite">В избранное</button>
           <p class="hotel-star hotel-star-4">
@@ -188,8 +188,8 @@
             <img class="hotel-card-image" src="#" alt="Villas at Poco Diablo" />
             <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
           </a>
-          <p>Гостиница</p>
-          <p>От 5000 р</p>
+          <p class="housing-type">Гостиница</p>
+          <p class="housing-price">От 5000 р</p>
           <a class="more button" href="#">Подробнее</a>
           <button class="button-favorite button-active">В избранном</button>
           <p class="hotel-star hotel-star-4">
@@ -202,8 +202,8 @@
             <img class="hotel-card-image" src="#" alt="Desert Quail Inn" />
             <h3 class="hotel-card-title">Desert Quail Inn</h3>
           </a>
-          <p>Гостиница</p>
-          <p>От 2500 р</p>
+          <p class="housing-type">Гостиница</p>
+          <p class="housing-price">От 2500 р</p>
           <a class="more button" href="#">Подробнее</a>
           <button class="button-favorite">В избранное</button>
           <p class="hotel-star hotel-star-3">
@@ -216,8 +216,8 @@
             <img class="hotel-card-image" src="#" alt="GreenTree Inn" />
             <h3 class="hotel-card-title">GreenTree Inn</h3>
           </a>
-          <p>Гостиница</p>
-          <p>От 1500 р</p>
+          <p class="housing-type">Гостиница</p>
+          <p class="housing-price">От 1500 р</p>
           <a class="more button" href="#">Подробнее</a>
           <button class="button-favorite">В избранное</button>
           <p class="hotel-star hotel-star-2">
