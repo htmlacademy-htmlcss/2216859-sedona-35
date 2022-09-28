@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-
+    <meta charset="UTF-8">
     <title>Гостиницы Седоны</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
   </head>
   <body>
     <header class="page-header">
       <nav class="nav-panel">
-        <img src="" alt="sedona-logo" />
+        <img src="/images/header/sedona-logo.svg" width="100" height="50" alt="sedona-logo">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html"> Главная</a>
@@ -20,20 +23,17 @@
             <a
               class="navigation-link navigation-link-current"
               href="catalog.html"
-              >Гостиницы</a
-            >
+              >Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#"
-              ><span class="visually-hidden">Поиск</span></a
-            >
+              ><span class="visually-hidden">Поиск</span></a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#"
-              ><span class="visually-hidden">Избранное</span></a
-            >
+              ><span class="visually-hidden">Избранное</span></a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Хочу сюда</a>
@@ -60,36 +60,25 @@
         <form
           class="catalog-filter"
           action="https://echo.htmlacademy.ru"
-          method="get"
-        >
+          method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input
-                    class="control-input"
-                    type="checkbox"
-                    name="pool"
-                    checked
-                  />
+                  <input class="control-input" type="checkbox" name="pool" checked>
                   Бассейн
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input
-                    class="control-input"
-                    type="checkbox"
-                    name="parking"
-                    checked
-                  />
+                  <input class="control-input" type="checkbox" name="parking" checked>
                   Парковка
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="wifi" />
+                  <input class="control-input" type="checkbox" name="wifi">
                   Wi-Fi
                 </label>
               </li>
@@ -100,34 +89,19 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input
-                    class="control-input"
-                    type="radio"
-                    name="hotel-type"
-                    value="hotel"
-                  />
+                  <input class="control-input" type="radio" name="hotel-type" value="hotel">
                   Гостиницы
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input
-                    class="control-input"
-                    type="radio"
-                    name="hotel-type"
-                    value="motel"
-                  />
+                  <input class="control-input" type="radio" name="hotel-type" value="motel">
                   Мотель
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input
-                    class="control-input"
-                    type="radio"
-                    name="hotel-type"
-                    value="apartment"
-                  />
+                  <input class="control-input" type="radio" name="hotel-type" value="apartment">
                   Апартаменты
                 </label>
               </li>
@@ -136,16 +110,9 @@
           <fieldset class="price">
             <legend class="price-range">Стоимость,Р</legend>
             <label for="price-range"></label>
-            <input type="number" placeholder="от" value="0" />
-            <input type="number" placeholder="до" value="9000" />
-            <input
-              type="range"
-              id="price-range"
-              name="price-range"
-              min="0"
-              max="9000"
-              step="1"
-            />
+            <input type="number" placeholder="от" value="0">
+            <input type="number" placeholder="до" value="9000">
+            <input type="range" id="price-range" name="price-range" min="0" max="9000" step="1">
           </fieldset>
           <button class="button" type="submit">Применить</button>
           <button class="button" type="reset">Сбросить</button>
@@ -171,7 +138,7 @@
       <ul class="hotels-list">
         <li class="hotel-card">
           <a class="product-cards-link" href="#">
-            <img class="hotel-card-image" src="#" alt="Amara Resort and Spa" />
+            <img class="hotel-card-image" src="/images/catalog/amaraResort.jpg" alt="Amara Resort and Spa">
             <h3 class="hotel-card-title">Amara Resort &amp; Spa</h3>
           </a>
           <p class="housing-type">Гостиница</p>
@@ -185,7 +152,7 @@
         </li>
         <li class="hotel-card">
           <a class="product-cards-link" href="#">
-            <img class="hotel-card-image" src="#" alt="Villas at Poco Diablo" />
+            <img class="hotel-card-image" src="/images/catalog/villasAtPocoDiablo.jpg" alt="Villas at Poco Diablo">
             <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
           </a>
           <p class="housing-type">Гостиница</p>
@@ -199,7 +166,7 @@
         </li>
         <li class="hotel-card">
           <a class="product-cards-link" href="#">
-            <img class="hotel-card-image" src="#" alt="Desert Quail Inn" />
+            <img class="hotel-card-image" src="/images/catalog/desertQuailInn.jpg" alt="Desert Quail Inn">
             <h3 class="hotel-card-title">Desert Quail Inn</h3>
           </a>
           <p class="housing-type">Гостиница</p>
@@ -213,7 +180,7 @@
         </li>
         <li class="hotel-card">
           <a class="product-cards-link" href="#">
-            <img class="hotel-card-image" src="#" alt="GreenTree Inn" />
+            <img class="hotel-card-image" src="/images/catalog/greenTreeInn.jpg" alt="GreenTree Inn">
             <h3 class="hotel-card-title">GreenTree Inn</h3>
           </a>
           <p class="housing-type">Гостиница</p>
@@ -259,14 +226,7 @@
           method="post"
         >
           <label for="newsletter-email"></label>
-          <input
-            class="field"
-            placeholder="Ваш email"
-            type="email"
-            name="newsletter-email"
-            id="newsletter-email"
-            required
-          />
+          <input class="field" placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
           <button class="button newsletter-button" type="submit">
             <span class="visually-hidden">Подписаться</span>
           </button>
@@ -304,8 +264,7 @@
       </section>
       <section class="htmlacademy-link">
         <a class="html-academy-link" href="https://htmlacademy.ru/">
-          <img src="" alt="logo academy" />
-        </a>
+          <img src="/images/footer/logo-academy.svg" alt="logo academy"></a>
       </section>
     </footer>
   </body>
