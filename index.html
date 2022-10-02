@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -40,11 +41,10 @@
     <main class="main-index">
       <section class="welcome-to-sedona">
         <h1 class="visually-hidden">Welcome to Sedona</h1>
-        <img class="welcome-title" src="/images/hero/welcome-hero.svg"  width="" height="" alt="Welcome title">
-        <img class="welcome-title" src="/images/hero/gorgeous-hero.svg"  width="" height="" alt="welcome-title">
-        <img class="sedona-slogan" src="/images/hero/sedona-hero.svg" width="" height="" alt="because grand canyon sucks">
+        <img class="welcome-title" src="/images/index-background.jpg"  width="" height="" alt="Welcome to gorgeous Sedona. Because Grand canyon suks!">
+
       </section>
-      <section>
+      <section class="introduction">
         <h2 class="visually-hidden">Sedona introduction</h2>
         <p class="welcome-title">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
@@ -58,12 +58,14 @@
       <section class="advantages">
         <h2 class="visually-hidden">Sedona advantages</h2>
         <ul class="advantages-list">
-          <li class="advantages-list-item">
+          <li class="advantages-list-item-decorated">
             <h3 class="advantages-title">Настоящий городок</h3>
             <p class="advantages-description">
               Седона — не аттракцион для туристов, там течёт своя жизнь
-              <img src="/images/advantages/sedona-houses.jpg" width="" height="" alt="sedona city photo">
             </p>
+          </li>
+          <li class="advantages-list-item-img">
+            <img src="/images/advantages/sedona-houses.jpg" width="800" height="384" alt="sedona city photo">
           </li>
           <li class="advantages-list-item">
             <h3 class="advantages-title">Небольшая площадь</h3>
@@ -86,8 +88,10 @@
               Большинство едет в Гранд Каньон и толпится там
             </p>
           </li>
-          <li class="advantages-list-item">
-            <img src="/images/advantages/devils-bridge.jpg" width="" height="" alt="sedona devil's bridge">
+          <li class="advantages-list-item-img">
+            <img src="/images/advantages/devils-bridge.jpg" width="800" height="384" alt="sedona devil's bridge">
+          </li>
+          <li class="advantages-list-item-decorated">
             <h3 class="advantages-title">Там есть мост дьявола</h3>
             <!--upper case-->
             <p class="advantages-description">
@@ -123,9 +127,9 @@
         </ul>
       </section>
       <section class="hotels-search">
-        <h2 class="interest">Заинтересовались?</h2>
+        <h2 class="search-title">Заинтересовались?</h2>
         <!--upper case-->
-        <p>
+        <p class="search-description">
           Укажите предполагаемые даты поездки,и мы покажем вам лучшие
           предложения гостиниц в Седоне
         </p>
