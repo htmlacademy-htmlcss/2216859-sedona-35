@@ -47,6 +47,11 @@ background-color: #ffffff;
     text-align: center;
 }
 
+.welcome-to-sedona {
+background-image:url("/images/index-background.jpg"), url('/images/hero/divider.svg');
+background-repeat: no-repeat;
+}
+
 .welcome-title {
     font-family: 'PT Sans', sans-serif;
     font-style: normal;
