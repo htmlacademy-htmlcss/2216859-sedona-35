@@ -15,13 +15,13 @@
 }
 
 body {
-font-family: "PT Sans", sans-serif;
-font-size: 18px;
-line-height: 21px;
-font-weight: 400;
-font-display: swap;
-color: #242424;
-background-color: #ffffff;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    font-display: swap;
+    color: #242424;
+    background-color: #ffffff;
 }
 
 .navigation-link {
@@ -48,8 +48,8 @@ background-color: #ffffff;
 }
 
 .welcome-to-sedona {
-background-image:url("/images/index-background.jpg"), url('/images/hero/divider.svg');
-background-repeat: no-repeat;
+    background-image:url("/images/index-background.jpg"), url('/images/hero/divider.svg');
+    background-repeat: no-repeat;
 }
 
 .welcome-title {
@@ -63,10 +63,10 @@ background-repeat: no-repeat;
 
 .welcome-description {
     font-family: 'PT Sans', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 22px;
-line-height: 26px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
 }
 
 .advantages-list {
@@ -142,13 +142,13 @@ line-height: 26px;
 }
 
 .newsletter-subscription {
-color: #ffffff;
-background-image: url("/images/subscribe.jpg");
-Width: 1200px;
-Height: 414px;
-background-repeat: no-repeat;
-background-color: cornflowerblue;
-text-align: center;
+    color: #ffffff;
+    background-image: url("/images/subscribe.jpg");
+    Width: 1200px;
+    Height: 414px;
+    background-repeat: no-repeat;
+    background-color: cornflowerblue;
+    text-align: center;
 }
 
 .hotels-catalog {
