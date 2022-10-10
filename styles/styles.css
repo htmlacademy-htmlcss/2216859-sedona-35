@@ -31,6 +31,12 @@ body {
 
 }
 
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 /* Navigation panel */
 
 .nav-panel {
@@ -46,10 +52,7 @@ body {
 }
 
 .navigation-list {
-    list-style: none;
     width: 480px;
-    margin: 0;
-    padding: 0;
 }
 
 .navigation-user {
@@ -135,11 +138,8 @@ body {
 /* Advantages lists */
 
 .advantages-list-decorated {
-    list-style: none;
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
     text-align: center;
 }
 
@@ -187,10 +187,7 @@ body {
 .advantages-texts-list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
     text-align: center;
-    list-style: none;
     background-color: rgba(131, 179, 211, 12%);
 }
 
@@ -229,10 +226,7 @@ body {
 
 .services-list {
     display: flex;
-    margin: 0;
-    padding: 0;
     text-align: center;
-    list-style: none;
 }
 
 
@@ -407,8 +401,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
-    list-style-type: none;
-
 }
 
 /* Hotel cards */
@@ -497,7 +489,6 @@ body {
 }
 
 .pagination {
-    list-style-type: none;
     display: flex;
 }
 
