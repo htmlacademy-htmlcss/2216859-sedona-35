@@ -666,8 +666,8 @@ body {
 
 
 .footer-social-item {
-    width:47px;
-    height:40px;
+    min-width:47px;
+    min-height:40px;
 }
 
 .phone-link {
