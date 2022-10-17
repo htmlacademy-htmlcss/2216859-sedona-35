@@ -95,7 +95,6 @@ body {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    transform: capitalize;
     color: inherit;
     text-decoration: none;
 }
@@ -243,7 +242,6 @@ body {
     line-height: 21px;
     color: #333333;
     width:230px;
-    margin: 0 auto;
     margin: 0 85px 121px ;
 }
 
@@ -398,7 +396,7 @@ body {
     background-repeat: no-repeat;
     background-color: cornflowerblue;
     text-align: center;
-    font-family: 'PT Sans' sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -441,7 +439,7 @@ body {
 }
 
 .subscription-text {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
