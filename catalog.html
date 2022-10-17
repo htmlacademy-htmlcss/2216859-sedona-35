@@ -11,39 +11,34 @@
   </head>
   <body>
     <div class="container">
-    <header class="page-header">
-      <nav class="nav-panel">
-        <img class="sedona-logo" src="/images/header/sedona-logo.svg" width="100" height="50" alt="sedona-logo">
-        <ul class="navigation-list list-reset">
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html"> Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="about.html">О Седоне</a>
-          </li>
-          <li class="navigation-item">
-            <a
-              class="navigation-link navigation-link-current"
-              href="catalog.html"
-              >Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="navigation-list navigation-user list-reset">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#"
-              ><span class="visually-hidden">Поиск</span></a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#"
-              ><span class="visually-hidden">Избранное</span></a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
+      <header class="page-header">
+        <nav class="nav-panel">
+          <img class="sedona-logo" src="/images/header/sedona-logo.svg" width="100" height="50" alt="sedona-logo">
+          <ul class="navigation-list list-reset">
+            <li class="navigation-item">
+              <a class="navigation-link" href="index.html"> Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="about.html">О Седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="navigation-list navigation-user list-reset">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#"
+                ><span class="visually-hidden">Поиск</span></a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span></a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Хочу сюда</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
     <main class="main-inner main-container">
       <section class="hotels-catalog">
         <div class="sedona-hotels-title">
@@ -121,7 +116,7 @@
         </form>
       </div>
       </section>
-      <div class="result-panel">
+      <div class="sorting-panel">
       <p class="search-results">
         Найдено гостиниц:<span class="search-result">38</span>
       </p>
@@ -140,15 +135,17 @@
         <span class="visually-hidden">Показать списком</span>
       </a>
     </div>
-      <div class="container-result">
+      <div class="container-results">
       <ul class="hotels-list list-reset">
         <li class="hotel-card">
           <a class="product-cards-link" href="#">
-            <img class="hotel-card-image" src="/images/catalog/amara-resort.jpg" width="" height="" alt="Amara Resort and Spa">
+            <img class="hotel-card-image" src="/images/catalog/amara-resort.jpg" width="300" height="212" alt="Amara Resort and Spa">
             <h3 class="hotel-card-title">Amara Resort &amp; Spa</h3>
           </a>
+          <div class="type-price">
           <p class="housing-type">Гостиница</p>
           <p class="housing-price">От 4000 р</p>
+        </div>
           <a class="more" href="#">Подробнее</a>
           <a class="button-favorite" href="#">В избранное</a>
           <p class="hotel-star hotel-star-4">
@@ -158,7 +155,7 @@
         </li>
         <li class="hotel-card">
           <a class="product-cards-link" href="#">
-            <img class="hotel-card-image" src="/images/catalog/villas-at-poco-diablo.jpg" width="" height="" alt="Villas at Poco Diablo">
+            <img class="hotel-card-image" src="/images/catalog/villas-at-poco-diablo.jpg" width="300" height="212" alt="Villas at Poco Diablo">
             <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
           </a>
           <p class="housing-type">Гостиница</p>
@@ -172,7 +169,7 @@
         </li>
         <li class="hotel-card">
           <a class="product-cards-link" href="#">
-            <img class="hotel-card-image" src="/images/catalog/desert-quail-inn.jpg" width="" height="" alt="Desert Quail Inn">
+            <img class="hotel-card-image" src="/images/catalog/desert-quail-inn.jpg" width="300" height="212" alt="Desert Quail Inn">
             <h3 class="hotel-card-title">Desert Quail Inn</h3>
           </a>
           <p class="housing-type">Гостиница</p>
@@ -186,7 +183,7 @@
         </li>
         <li class="hotel-card">
           <a class="product-cards-link" href="#">
-            <img class="hotel-card-image" src="/images/catalog/green-tree-inn.jpg" width="" height="" alt="GreenTree Inn">
+            <img class="hotel-card-image" src="/images/catalog/green-tree-inn.jpg" width="300" height="212" alt="GreenTree Inn">
             <h3 class="hotel-card-title">GreenTree Inn</h3>
           </a>
           <p class="housing-type">Гостиница</p>
@@ -200,6 +197,7 @@
         </li>
       </ul>
     </div>
+    <div class="pagination-container">
       <ul class="pagination list-reset">
         <li class="pagination-item">
           <a class="pagination-link pagination-current" href="#">1</a>
@@ -220,10 +218,9 @@
           <a class="pagination-link" href="#">10</a>
         </li>
       </ul>
-
+    </div>
       <section class="newsletter-subscription-inner">
         <h2 class="subscription-title-inner">Подпишитесь на рассылку</h2>
-        <!--upper case-->
         <p class="subscription-text-inner">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
@@ -241,40 +238,39 @@
       </section>
     </main>
     <footer class="main-footer">
+      <div class="page-footer-container">
       <section class="footer-social-links">
-        <h3 class="visually-hiden">Social networks</h3>
+        <h3 class="visually-hidden">Social networks</h3>
         <ul class="social-links-list list-reset">
           <li class="footer-social-item">
             <a class="vk-link" href="https://vk.com/htmlacademy">
-              <span class="visually-hiden">Вконтакте</span></a
-            >
+              <span class="visually-hidden">Вконтакте</span></a>
           </li>
           <li class="footer-social-item">
             <a class="telegram-link" href="https://t.me/htmlacademy">
-              <span class="visually-hiden">Телеграмм</span></a
-            >
+              <span class="visually-hidden">Телеграмм</span></a>
           </li>
           <li class="footer-social-item">
             <a
               class="youtube-link"
-              href="https://www.youtube.com/user/htmlacademyru"
-            >
-              <span class="visually-hiden">Youtube</span></a
-            >
+              href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Youtube</span></a>
           </li>
         </ul>
       </section>
       <section class="phone-link">
-        <h3 class="visually-hiden">Contact phone</h3>
+        <h3 class="visually-hidden">Contact phone</h3>
         <address class="contacts-address">
           <a class="phone-number" href="tel:88128121212">+7 (812) 812-12-12</a>
         </address>
       </section>
       <section class="htmlacademy-link">
-        <h3 class="visually-hiden">Academy link</h3>
+        <h3 class="visually-hidden">Academy link</h3>
         <a class="html-academy-link" href="https://htmlacademy.ru/">
-          <img src="/images/footer/logo-academy.svg" width="" height="" alt="logo academy"></a>
+          <img src="/images/footer/logo-academy.svg" width="115" height="33" alt="logo academy">
+        </a>
       </section>
+    </div>
     </footer>
     </div>
   </body>
