@@ -640,8 +640,9 @@ body {
     color: #ffffff;
     background-color: rgba(130, 179, 211, 1);
     text-decoration: none;
+}
 
-/*footer*/
+    /*footer*/
 
 .page-footer-container {
     display:flex;
