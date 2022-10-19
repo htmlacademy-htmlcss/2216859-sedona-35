@@ -536,28 +536,41 @@ body {
 
 .hotel-card {
     display: grid;
-    width:340px;
+    grid-template-rows: 212px repeat(4, auto);
+    grid-gap: 16px;
     border: 1px solid #E6E6E6;
     border-radius: 4px;
     padding: 20px;
     box-sizing: border-box;
 }
 
-
 .hotel-card-image {
-    margin-top:0;
-    margin-bottom: 16px;
-}
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
 .hotel-card-title {
-    margin-top:0;
-    margin-bottom: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 .type-price {
-    display:flex;
-    flex-wrap:wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
 
+.card-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 140px);
+    grid-gap: 20px;
+}
+
+.ratings {
+    display: grid;
+    grid-template-columns: repeat(2, 140px);
+    grid-gap: 20px;
 }
 
 .product-cards-link {
@@ -577,7 +590,8 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #333333;
-    flex-grow:1;
+    margin:0;
+
 }
 
 .housing-price {
@@ -587,6 +601,8 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #333333;
+    margin:0;
+    text-align: right;
 }
 
 .more {
@@ -599,6 +615,8 @@ body {
     color: #FFFFFF;
     text-decoration: none;
     background-color: #756157;
+    text-align: center;
+    padding-top: 8px;
 }
 
 .button-favorite {
@@ -609,7 +627,10 @@ body {
     line-height: 20px;
     text-transform: uppercase;
     color: #FFFFFF;
+    text-decoration: none;
     background-color: #82B3D3;
+    text-align: center;
+    padding-top: 8px;
 }
 
 .button-active {
@@ -632,6 +653,12 @@ body {
     text-align: center;
     text-transform: uppercase;
     background-color: #F2F2F2;
+    margin:0;
+    padding-top:8px;
+}
+
+.hotel-star {
+    margin:0;
 }
 
 .contacts-address a {
