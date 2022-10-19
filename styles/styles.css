@@ -616,7 +616,7 @@ body {
     text-decoration: none;
     background-color: #756157;
     text-align: center;
-    padding-top: 8px;
+     border-radius: 4px;
 }
 
 .button-favorite {
@@ -630,7 +630,7 @@ body {
     text-decoration: none;
     background-color: #82B3D3;
     text-align: center;
-    padding-top: 8px;
+    border-radius: 4px;
 }
 
 .button-active {
@@ -654,7 +654,7 @@ body {
     text-transform: uppercase;
     background-color: #F2F2F2;
     margin:0;
-    padding-top:8px;
+    border-radius: 4px;
 }
 
 .hotel-star {
