@@ -55,18 +55,19 @@ body {
     width: 140px;
     height: 70px;
     margin-right: 28px;
+    margin-bottom: -12px;
     align-items: center;
+    z-index: 1;
 }
 
 .navigation-list {
-    max-width: 465px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .navigation-user {
-    max-width: 270px;
+    max-width: 470px;
     margin-left: auto;
 }
 
@@ -402,8 +403,7 @@ body {
 .newsletter-subscription {
     color: #FFFFFF;
     background-image: url("../images/subscribe.jpg");
-    width: 1200px;
-    height:414px;
+    background-size: 100% auto;
     background-position: center top;
     background-repeat: no-repeat;
     background-color: cornflowerblue;
