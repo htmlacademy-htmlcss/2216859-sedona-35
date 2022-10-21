@@ -472,7 +472,8 @@ body {
 }
 
 .newsletter-form {
-    margin: 0 258px 104px;
+    margin: 0 258px;
+    padding-bottom: 104px;
 }
 
 
