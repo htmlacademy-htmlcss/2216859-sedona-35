@@ -299,6 +299,7 @@ body {
     padding: 35px 70px 70px 70px;
 }
 
+
 .inner-header-title {
     font-family: 'PT Sans', sans-serif;
     font-style: normal;
@@ -341,6 +342,17 @@ body {
     margin: 0 452px 20px;
 }
 
+.catalog-filter-item {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+
+}
+
 .search-description {
     font-family: 'PT Sans', sans-serif;
     text-align: center;
@@ -350,6 +362,7 @@ body {
     line-height: 26px;
     color:#333333;
     margin: 0 303px 54px;
+
 }
 
 .hotels-search-button {
@@ -373,23 +386,22 @@ body {
     flex-direction: column;
 }
 
+
+/*sorting results*/
 .sorting-panel {
     display: flex;
-    flex-wrap: wrap;
-    padding: 50px 70px 0 70px;
+    width: auto;
+    justify-content: space-between;
+    padding: 56px 70px 47px;
 }
 
 .search-results {
-    margin-right: 200px;
-}
-
-.select-control {
-    margin-right: 70px;
+    margin:0;
 }
 
 .sorting-panel .button {
-    width: 48px;
-    height: 48px;
+    min-width: 48px;
+    min-height: 48px;
 }
 
 .filter-buttons {
@@ -471,6 +483,7 @@ body {
     display: flex;
     justify-content: space-around;
 }
+
 .catalog-filter-group {
     margin: 0;
     padding: 0;
@@ -479,6 +492,17 @@ body {
 
 .catalog-filter-list {
     width: 151px;
+    margin-right: 70px;
+}
+
+.catalog-filter-type {
+    width:151px;
+    margin-right: 140px;
+}
+
+.price-range {
+    display: flex;
+    width: 288px;
     margin-right: 70px;
 }
 
@@ -491,7 +515,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     border-style: none;
-    width: 288px;
+    padding: 0;
 }
 
 
@@ -530,7 +554,6 @@ body {
 .container-results {
     width: 1060px;
     padding-left: 70px;
-    padding-top: 40px;
     margin-right: 70px;
 }
 

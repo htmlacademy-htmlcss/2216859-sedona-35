@@ -10,8 +10,10 @@
 <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+<!-- site header. sticky footer container-->
     <div class="container">
       <header class="page-header">
+<!-- left navigation panel with logo and main menu -->
         <nav class="nav-panel">
           <img class="sedona-logo" src="/images/header/sedona-logo.svg" width="100" height="50" alt="sedona-logo">
           <ul class="navigation-list list-reset">
@@ -25,6 +27,7 @@
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
+<!-- right navigation panel with user buttons-->
           <ul class="navigation-list navigation-user list-reset">
             <li class="navigation-item">
               <a class="navigation-link" href="#"
@@ -40,9 +43,11 @@
         </nav>
       </header>
     <main class="main-inner main-container">
+<!-- search filters  panel-->
       <section class="hotels-catalog">
         <div class="sedona-hotels-title">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
+<!-- breadcrumbs -->
           <ul class="breadcrumbs list-reset">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -53,14 +58,15 @@
           </ul>
         </div>
         <h2 class="visually-hidden">Список отелей</h2>
-        <div class="filters">
         <form
-          class="catalog-filter"
-          action="https://echo.htmlacademy.ru"
-          method="get">
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Инфраструктура:</legend>
-            <ul class="catalog-filter-list list-reset">
+        class="catalog-filter"
+        action="https://echo.htmlacademy.ru"
+        method="get">
+      <div class="filters">
+<!-- infrastructure filter -->
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Инфраструктура:</legend>
+          <ul class="catalog-filter-list list-reset">
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="pool" checked>
@@ -81,9 +87,10 @@
               </li>
             </ul>
           </fieldset>
+<!-- housing type filter -->
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Тип Жилья:</legend>
-            <ul class="catalog-filter-list list-reset">
+            <ul class="catalog-filter-type list-reset">
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="hotel-type" value="hotel">
@@ -104,20 +111,25 @@
               </li>
             </ul>
           </fieldset>
+<!-- price range selector -->
+          <div class="price-range">
           <fieldset class="price">
-            <legend class="price-range">Стоимость,Р</legend>
+            <legend class="price-maxmin">Стоимость,Р</legend>
             <label for="price-range"></label>
             <input type="number" placeholder="от" value="0">
             <input type="number" placeholder="до" value="9000">
             <input type="range" id="price-range" name="price-range" min="0" max="9000" step="1">
           </fieldset>
+        </div>
+<!-- apply reset buttons -->
           <div class="filter-buttons">
           <button class="button" type="submit">Применить</button>
           <button class="button" type="reset">Сбросить</button>
         </div>
-        </form>
+      </form>
       </div>
       </section>
+<!-- sorting results and view select -->
       <div class="sorting-panel">
       <p class="search-results">
         Найдено гостиниц:<span class="search-result">38</span>
@@ -127,6 +139,8 @@
         <option value="cheap">Сначала дешевые</option>
         <option value="expensive">Сначала дорогие</option>
       </select>
+<!-- view options -->
+      <div class="search-view">
       <a class="button button-light" href="#">
         <span class="visually-hidden">Показать таблицей</span>
       </a>
@@ -137,8 +151,11 @@
         <span class="visually-hidden">Показать списком</span>
       </a>
     </div>
+      </div>
       <div class="container-results">
+<!-- hotel cards grid  -->
       <ul class="hotels-list list-reset">
+<!-- hotel card start -->
         <li class="hotel-card">
           <img class="hotel-card-image" src="/images/catalog/amara-resort.jpg" width="300" height="212" alt="Amara Resort and Spa">
           <a class="product-cards-link" href="#">
@@ -159,6 +176,7 @@
           <p class="hotel-rating">Рейтинг: 8,5</p>
         </div>
         </li>
+<!-- hotel card end -->
         <li class="hotel-card">
           <img class="hotel-card-image" src="/images/catalog/villas-at-poco-diablo.jpg" width="300" height="212" alt="Villas at Poco Diablo">
           <a class="product-cards-link" href="#">
@@ -221,6 +239,7 @@
         </li>
       </ul>
     </div>
+<!-- pagination block -->
     <div class="pagination-container">
       <ul class="pagination list-reset">
         <li class="pagination-item">
@@ -243,6 +262,7 @@
         </li>
       </ul>
     </div>
+<!-- subscription block with form -->
       <section class="newsletter-subscription-inner">
         <h2 class="subscription-title-inner">Подпишитесь на рассылку</h2>
         <p class="subscription-text-inner">
@@ -261,8 +281,10 @@
         </form>
       </section>
     </main>
+<!-- site footer -->
     <footer class="main-footer">
       <div class="page-footer-container">
+<!-- social links -->
       <section class="footer-social-links">
         <h3 class="visually-hidden">Social networks</h3>
         <ul class="social-links-list list-reset">
@@ -282,12 +304,14 @@
           </li>
         </ul>
       </section>
+<!-- contacts block -->
       <section class="phone-link">
         <h3 class="visually-hidden">Contact phone</h3>
         <address class="contacts-address">
           <a class="phone-number" href="tel:88128121212">+7 (812) 812-12-12</a>
         </address>
       </section>
+<!-- academy logo block -->
       <section class="htmlacademy-link">
         <h3 class="visually-hidden">Academy link</h3>
         <a class="html-academy-link" href="https://htmlacademy.ru/">
