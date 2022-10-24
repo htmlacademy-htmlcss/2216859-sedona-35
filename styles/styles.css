@@ -179,6 +179,12 @@ body {
     text-align: center;
 }
 
+.advantages-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 .advantages-list-item-decorated {
     font-family: 'PT Sans', sans-serif;
     font-style: normal;
@@ -212,7 +218,7 @@ body {
     color:#ffffff;
     background-color: #82B3D3;
     width:230px;
-
+    word-wrap: break-word;
     margin:0 85px 111px ;
 }
 
@@ -257,7 +263,8 @@ body {
     line-height: 21px;
     color: #333333;
     width:230px;
-    margin: 0 85px 121px ;
+    margin: 0 85px 121px;
+    word-wrap: break-word;
 }
 
 /*services list*/
@@ -302,7 +309,8 @@ body {
     line-height: 21px;
     text-align: center;
     color: #333333;
-    margin: 0 85px 81px ;
+    margin: 0 85px 81px;
+    word-wrap: break-word;
 }
 
 /* main page hotels search block with link */
