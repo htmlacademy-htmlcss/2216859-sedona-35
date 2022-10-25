@@ -651,21 +651,53 @@ body {
     width: auto;
     justify-content: space-between;
     padding: 50px 70px 39px;
+    align-items: center;
 }
 
 .search-results {
     padding: 0;
     margin: 0;
-    margin-right: 200px;
+    margin-right: 70px;
+    flex-grow:1;
+}
+
+.select-control {
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 21px;
+    width: 292px;
+    padding: 12px 0 12px 20px;
+    border: solid 2px #E5E5E5;
+    border-radius: 4px;
+    background-image: url(../images/catalog/down-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    appearance: none;
+    margin-right: 70px;
 }
 
 .sorting-type {
     margin-right: auto;
 }
 
-.sorting-panel .button {
-    min-width: 48px;
-    min-height: 48px;
+.sorting-panel .button-view {
+    position: relative;
+    min-width: 46px;
+    min-height: 46px;
+    border: solid 2px #E5E5E5;
+}
+
+.view-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.sorting-panel .button-view:not(:last-child) {
+margin-right:8px;
 }
 
 .result-panel {
@@ -681,6 +713,11 @@ body {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+}
+
+.search-view {
+    display: flex;
+    width:160px;
 }
 
 
