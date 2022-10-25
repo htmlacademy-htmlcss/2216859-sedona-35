@@ -80,6 +80,22 @@ body {
     min-height: 20px;
 }
 
+.navigation-user
+.navigation-item:nth-child(1)
+.navigation-link {
+    background-image: url('/images/header/search-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navigation-user
+.navigation-item:nth-child(2)
+.navigation-link {
+    background-image: url('/images/header/heart-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 .navigation-link {
     display:block;
@@ -276,14 +292,10 @@ body {
 
 
 .services-list-item {
-    padding-top:80px;
+    padding-top:0 80px;
     width: 400px;
+    min-height: 384px;
     background-color: rgba(131, 179, 211, 12%);
-}
-
-.service-icon {
-    margin-top: 0;
-    margin-bottom: 30px;
 }
 
 .food {
@@ -768,8 +780,19 @@ body {
 }
 
 .footer-social-item {
+    position: relative;
     min-width:47px;
     min-height:40px;
+}
+
+.social-link-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill: #dbdbdb;
 }
 
 /* contacts block */
