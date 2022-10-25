@@ -45,6 +45,30 @@ body {
     list-style: none;
 }
 
+.button {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(117, 97, 87, 1);
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border-color: #82B3D3;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+.navigation-item .navigation-button {
+    padding-top: 14px;
+}
+
 /* navigation panel */
 
 .nav-panel {
@@ -73,6 +97,7 @@ body {
 .navigation-user {
     max-width: 470px;
     margin-left: auto;
+    align-items: center
 }
 
 .navigation-user .navigation-link {
@@ -80,22 +105,28 @@ body {
     min-height: 20px;
 }
 
-.navigation-user
-.navigation-item:nth-child(1)
-.navigation-link {
+.navigation-link-search {
+    display: inline-block;
     background-image: url('/images/header/search-icon.svg');
     background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
     background-position: center;
 }
 
-.navigation-user
-.navigation-item:nth-child(2)
-.navigation-link {
+.navigation-link-favorites {
+    display: inline-block;
     background-image: url('/images/header/heart-icon.svg');
     background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
     background-position: center;
 }
 
+.navigation-link-user {
+    padding: 8px 0;
+    width: 160px;
+}
 
 .navigation-link {
     display:block;
@@ -433,6 +464,7 @@ body {
 }
 
 .newsletter-form {
+
     margin: 0 258px;
     padding-bottom: 104px;
 }
@@ -792,7 +824,6 @@ body {
     bottom: 0;
     left: 0;
     margin: auto;
-    fill: #dbdbdb;
 }
 
 /* contacts block */
