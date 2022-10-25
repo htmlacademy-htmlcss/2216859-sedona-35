@@ -533,9 +533,35 @@ body {
     padding-bottom: 40px;
 }
 
+.breadcrumbs-link-icon {
+    color: inherit;
+    display: block;
+    background-image: url(../images/breadcrumbs/home.svg);
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+    margin: 12px 10px 0 0;
+}
+
+.breadcrumbs-item {
+    color:inherit;
+    display:block;
+    background-image: url("../images/breadcrumbs/right-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 7px;
+    height: 10px;
+    margin: 13px 11px 0 0;
+}
+
 .breadcrumbs-link {
+    display: block;
+    padding-left: 15px;
+    margin-top: -6px;
     margin-right: 28px;
 }
+
+
 
 /* infrastructure and housing type filters */
 
@@ -596,6 +622,26 @@ body {
 .filter-buttons {
     display: flex;
     flex-direction: column;
+    width:191px;
+    padding-top: 55px;
+}
+
+.apply-filter-button {
+    margin-bottom: 40px;
+    padding: 8px 50px;
+}
+
+.button-reset {
+    display: inline-block;
+    color:inherit;
+    background-color: rgba(28,28,28,0);
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 8px 50px;
+    cursor:pointer;
 }
 
 /*sorting results and view select*/
@@ -604,11 +650,17 @@ body {
     display: flex;
     width: auto;
     justify-content: space-between;
-    padding: 56px 70px 47px;
+    padding: 50px 70px 39px;
 }
 
 .search-results {
-    margin:0;
+    padding: 0;
+    margin: 0;
+    margin-right: 200px;
+}
+
+.sorting-type {
+    margin-right: auto;
 }
 
 .sorting-panel .button {
