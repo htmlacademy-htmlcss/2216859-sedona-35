@@ -336,19 +336,41 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items:center;
     padding-top:0 80px;
     width: 400px;
     min-height: 384px;
     background-color: rgba(131, 179, 211, 12%);
 }
 
+.housing-icon {
+    background-image: url("../images/advantages/housing-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 75px;
+}
+
+.food-icon {
+    background-image: url("../images/advantages/food-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 75px;
+}
+
+.souvenir-icon {
+    background-image:url("../images/advantages/souvenir-icon.svg");
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+
 .food {
     background-color: #FFFFFF;
 }
 
 .service-title {
-    padding: 30px 0;
-    margin: 0;
+    padding: 182px 0 0;
+    margin: 0 0 30px;
     font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -357,8 +379,8 @@ body {
     text-align: center;
     text-transform: uppercase;
     color:#000000;
-
 }
+
 
 .service-description {
     font-family: 'PT Sans', sans-serif;
@@ -444,6 +466,8 @@ body {
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
+    padding-top: 96px;
+
 }
 
 
@@ -728,6 +752,7 @@ margin-right:8px;
     width: 1060px;
     padding-left: 70px;
     margin-right: 70px;
+    margin-bottom: 80px;
 }
 
 /* hotel card */
@@ -873,12 +898,14 @@ margin-right:8px;
 
 .pagination-container {
     display: flex;
-    padding: 40px 70px 60px 70px;
+    padding: 0;
+    margin-bottom: 60px;
 }
 
 .pagination {
+    width: 1060px;
     display: flex;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     list-style-type: none;
 }
