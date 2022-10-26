@@ -1100,7 +1100,7 @@ margin-right:8px;
 }
 /* contacts block */
 
-.contacts-address a {
+.phone-number {
     color: #000000;
     font-family: 'PT Sans', sans-serif;
     font-style: normal;
@@ -1108,6 +1108,18 @@ margin-right:8px;
     font-size: 40px;
     line-height: 40px;
     text-decoration: none;
+}
+
+.phone-number:hover {
+    color: #756157;
+}
+
+.phone-number:focus {
+    color: #756157;
+}
+
+.phone-number:active {
+    color:rgba(117, 97, 87, 0.3);
 }
 
 .phone-link {
@@ -1120,4 +1132,16 @@ margin-right:8px;
 .htmlacademy-link {
     margin-right: 70px;
     margin-bottom: 35px;
+}
+
+.academy-icon:hover {
+    fill:#756157;
+}
+
+.academy-icon:focus {
+    fill:#756157;
+}
+
+.academy-icon:active {
+    fill:rgba(117, 97, 87, 0.3);
 }
