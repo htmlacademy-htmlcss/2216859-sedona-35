@@ -45,6 +45,8 @@ body {
     list-style: none;
 }
 
+/* buttons */
+
 .button {
     font-family: inherit;
     font-size: 16px;
@@ -64,13 +66,67 @@ body {
     display: inline-block;
 }
 
+.hotels-search-button:hover,
+.navigation-link-user:hover,
+.more:hover {
+    background-color: #615048;
+}
+
+.hotels-search-button:focus,
+.navigation-link-user:focus,
+.more:focus {
+    background-color: #615048;
+    border: solid 3px #83B3D3;
+}
+
+.hotels-search-button:active,
+.navigation-link-user:active,
+.more:active {
+    background-color: #756157;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.subscription-button:hover,
+.apply-filter-button:hover,
+.button-favorite:hover,
+.pagination-link:hover {
+    background-color: #68A2CA;
+}
+
+.subscription-button:focus,
+.apply-filter-button:focus,
+.button-favorite:focus,
+.pagination-link:focus {
+    background-color: #68A2CA;
+    border: solid 3px #83B3D3;
+}
+
+.subscription-button:active,
+.apply-filter-button:active,
+.button-favorite:active,
+.pagination-link:active {
+    background-color: #82B3D3;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+
+.button-active:hover {
+    background-color: #6C9E42;
+}
+
+.button-active:focus {
+    background-color: #6C9E42;
+    border: solid 3px #83B3D3;
+}
+
+.pagination-current:hover {
+    background-color: #F2F2F2;
+}
+
 .navigation-link-user {
     background-color: rgba(117, 97, 87, 1);
 }
 
-.navigation-item .navigation-button {
-    padding-top: 14px;
-}
 
 /* navigation panel */
 
@@ -469,6 +525,7 @@ margin: 30px 0;
     padding: 8px 50px;
     background-color: #756157;
     color: #FFFFFF;
+    border-radius: 4px;
 }
 
 /*subscription block with form*/
@@ -1033,6 +1090,13 @@ margin-right:8px;
 .youtube-link:focus .social-link-icon
  {
     fill: #68A2CA;
+}
+
+.vk-link:active .social-link-icon,
+.telegram-link:active .social-link-icon,
+.youtube-link:active .social-link-icon
+ {
+    fill: rgba(104, 162, 202, 0.3);
 }
 /* contacts block */
 
