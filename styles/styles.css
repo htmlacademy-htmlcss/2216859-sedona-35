@@ -799,6 +799,18 @@ margin: 30px 0;
     box-sizing: border-box;
 }
 
+.card-grid-toggle:hover {
+    border: solid 2px #000000;
+}
+
+.card-grid-toggle:focus {
+    border: solid 2px #68A2CA;
+}
+
+.card-grid-toggle:active {
+    border: solid 2px #000000;
+}
+
 .card-grid-toggle:nth-child(1) {
     border: solid 2px #000000;
 }
