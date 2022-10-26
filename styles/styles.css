@@ -788,6 +788,15 @@ margin: 30px 0;
     margin-right: 70px;
 }
 
+.select-control:hover,
+.select-control:focus {
+    border: solid 2px #68A2CA;
+}
+
+.select-control:active {
+    border: solid 2px #3F5E72;
+}
+
 
 .card-grid-toggle {
     display: flex;
