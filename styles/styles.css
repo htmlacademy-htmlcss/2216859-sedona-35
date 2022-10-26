@@ -648,7 +648,6 @@ body {
 
 .sorting-panel {
     display: flex;
-    width: auto;
     justify-content: space-between;
     padding: 50px 70px 39px;
     align-items: center;
@@ -676,27 +675,22 @@ body {
     margin-right: 70px;
 }
 
-.sorting-type {
-    margin-right: auto;
-}
-
-.sorting-panel .button-view {
-    position: relative;
-    min-width: 46px;
-    min-height: 46px;
-    border: solid 2px #E5E5E5;
-}
 
 .card-grid-toggle {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 48px;
+    min-height: 48px;
+    border: solid 2px #E5E5E5;
+    box-sizing: border-box;
 }
 
-.sorting-panel .button-view:not(:last-child) {
+.card-grid-toggle:nth-child(1) {
+    border: solid 2px #000000;
+}
+
+.card-grid-toggle:not(:last-child) {
 margin-right:8px;
 }
 
