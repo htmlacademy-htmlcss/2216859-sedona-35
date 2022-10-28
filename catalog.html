@@ -112,15 +112,32 @@
             </ul>
           </fieldset>
 <!-- price range selector -->
-          <div class="price-range">
-          <fieldset class="price">
-            <legend class="price-maxmin">Стоимость,Р</legend>
-            <label for="price-range"></label>
-            <input type="number" placeholder="от" value="0">
-            <input type="number" placeholder="до" value="9000">
-            <input type="range" id="price-range" name="price-range" min="0" max="9000" step="1">
+          <fieldset class="catalog-filter-group catalog-filter-price">
+            <legend class="catalog-filter-title">Стоимость, Р</legend>
+            <div class="range">
+              <div class="range-wraper-inputs">
+            <label class="cost" for="cost-from">
+            <input class="cost-input cost-min" id="cost-from" type="number" name="cost-from" value="0">
+            <span class="cost-label">от</span>
+            <span class="background-left"></span>
+          </label>
+          <label class="cost" for="cost-to">
+            <input class="cost-input cost-max" id="cost-to" type="number" name="cost-to" value="9000">
+            <span class="cost-label">до</span>
+            <span class="background-right"></span>
+          </label>
+          </div>
+            <div class="range-scale">
+              <div class="range-bar" style="width:226px">
+              <button class="range-toggle toggle-min" type="button">
+                <span class="visually-hidden">Минимальная цена</span>
+              </button>
+              <button class="range-toggle toggle-max" type="button">
+                <span class="visually-hidden">Максимальная цена</span>
+              </button>
+              </div>
+          </div>
           </fieldset>
-        </div>
 <!-- apply reset buttons -->
           <div class="filter-buttons">
           <button class="button apply-filter-button" type="submit">Применить</button>

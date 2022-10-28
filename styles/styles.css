@@ -57,7 +57,7 @@ body {
     background-color: #82B3D3;
     text-decoration: none;
     text-transform: uppercase;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     border-color: #82B3D3;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -584,6 +584,7 @@ body {
     margin: 0 390px 20px;
 }
 
+.subscription-text-inner,
 .subscription-text {
     font-family: 'PT Sans', sans-serif;
     font-style: normal;
@@ -602,18 +603,32 @@ body {
 .field {
     box-sizing: border-box;
     width: 452px;
+    margin:0;
     padding: 14px 20px;
     border: none;
     border-radius: 4px 0 0 4px;
     background-color: #F2F2F2;
     font-family: inherit;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 20px;
+}
+
+.field:hover,
+.field:focus {
+    background-color: #E6E6E6;
+}
+
+.field:focus {
+    outline: 3px solid #83B3D3;
+}
+
+.field:active {
+    outline: 3px solid #000000;
 }
 
 .subscription-button {
    width: 232px;
-   height: 56px;
+   height: 52px;
 }
 
 /*search filters  panel*/
@@ -689,7 +704,7 @@ body {
 }
 
 .catalog-filter-title {
-    margin-bottom: 32px;
+    padding-bottom: 32px;
 }
 
 .catalog-filter-list {
@@ -715,18 +730,116 @@ body {
 
 /* price range selector */
 
-.price-range {
+.catalog-filter-price {
     display: flex;
     width: 288px;
-    margin-right: 70px;
+    padding: 0 70px 0;
 }
 
-.price {
+.cost {
+    position: relative;
+    display: flex;
+    min-height: 48px;
+    color: rgba(0, 0, 0, 0.3);
+    justify-content:flex-start;
+    align-items: center;
+    margin-right: 2px;
+}
+
+.cost-label {
+    position: relative;
+    z-index: 1;
+    max-width: 28px;
+    word-break: break-word;
+}
+
+.cost-input {
+    width: 85px;
+    padding: 0 0 0 20px;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: start;
+    background-color: transparent;
+    border: none;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    z-index: 1;
+}
+
+.cost-input::-webkit-outer-spin-button,
+.cost-input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+}
+
+.background-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    border-radius: 4px 0 0 4px;
+    background-color: #F2F2F2;
+}
+
+.background-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    border-radius: 0 4px 4px 0;
+    background-color: #F2F2F2;
+}
+
+.range-wraper-inputs {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    border-style: none;
-    padding: 0;
+    margin-bottom: 48px;
+    justify-content: center;
+}
+
+.range-scale {
+    position: relative;
+    width: 287px;
+    height: 4px;
+    background-color: rgba(255,255,255,0.3);
+}
+
+.range-bar {
+    position: absolute;
+    height: 4px;
+    background-color: rgba(255,255,255);
+}
+
+.range-toggle {
+  position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -8px;
+    background-color: rgba(255,255,255);
+    border-radius: 5px;
+    border:none;
+    cursor: pointer;
+}
+
+.toggle-min {
+left:0;
+}
+
+.toggle-max {
+right: 0;
 }
 
 /* apply reset buttons */
@@ -741,6 +854,7 @@ body {
 .apply-filter-button {
     margin-bottom: 40px;
     padding: 8px 50px;
+    border-radius: 4px;
 }
 
 .button-reset {
@@ -1015,7 +1129,6 @@ margin-right:8px;
     width: 52px;
     margin: 10px 0;
     margin-right: 20px;
-    space-repeat: 6px;
 }
 
 .hotel-star-2 {
