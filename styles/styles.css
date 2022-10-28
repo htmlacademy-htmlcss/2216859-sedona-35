@@ -998,8 +998,9 @@ margin-right:8px;
 }
 
 .hotel-star {
-    margin:0;
+    margin: 10px 0;
     margin-right: 20px;
+
 }
 
 .hotel-star-4 {
@@ -1012,12 +1013,15 @@ margin-right:8px;
     background-image: url("../images/catalog/star.svg");
     background-repeat: repeat-x;
     width: 52px;
+    margin: 10px 0;
+    margin-right: 20px;
+    space-repeat: 6px;
 }
 
 .hotel-star-2 {
     background-image: url("../images/catalog/star.svg");
     background-repeat: repeat-x;
-    width: 32px;
+    width: 36px;
 }
 
 /*pagination block*/
