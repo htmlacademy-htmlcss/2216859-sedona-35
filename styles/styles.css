@@ -16,15 +16,14 @@
 }
 
 body {
-    margin:0;
-    /* min-height: 100%; */
+    min-width: 1280px;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color: #242424;
     background-color: #F2F2F2;
-
 }
 
 /* visually-hidden and list reset */
@@ -90,7 +89,8 @@ body {
 .subscription-button:hover,
 .apply-filter-button:hover,
 .button-favorite:hover,
-.pagination-link:hover {
+.pagination-link:hover,
+.modal-search-button:hover {
     background-color: #68A2CA;
 }
 
@@ -238,6 +238,7 @@ body {
     flex-grow: 1;
     width: 1200px;
     background-color: #FFFFFF;
+    box-sizing: border-box;
 }
 
 .page-container {
@@ -1384,6 +1385,10 @@ margin-right:8px;
     background-color: rgba(242, 242, 242, 0.8);
 }
 
+/* .modal-container-close {
+    display: none;
+} */
+
 .modal {
     position: relative;
     margin: auto;
@@ -1393,8 +1398,9 @@ margin-right:8px;
 }
 
 .modal-search {
+    border-radius: 30px;
     width: 717px;
-    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .modal-close-button {
@@ -1413,12 +1419,193 @@ margin-right:8px;
     cursor:pointer;
 }
 
+
 .modal-title {
+    margin: 0;
+    margin-bottom: 64px;
     font-family: "PT Sans", sans-serif;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
     color: #000000;
     text-transform: uppercase;
+}
+
+.field-group {
+    margin: 0;
+    margin-bottom: 23px;
+    display: grid;
+    grid-template-columns: 1fr 440px;
+    grid-template-rows: 48px 21px;
+}
+
+/* modal window. dates */
+.date-input {
+    align-self: center;
+}
+
+.date {
+    padding:12px 20px;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    border: none;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.6;
+}
+
+.date:hover {
+    background-color:#E6E6E6;
+}
+
+.date:focus {
+    background-color:#E6E6E6;
+    outline: solid 3px #83B3D3;
+}
+
+.date:active {
+    outline: solid 2px #000000;
+
+}
+
+.error-message {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    padding-left: 20px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FF5757;
+}
+
+.message {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    padding-left: 20px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.date-input {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    align-content: center;
+}
+
+/* modal window. persons and button */
+
+.visitor-counts {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+
+.adults-count,
+.kids-count {
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.adult-count-wrapper,
+.kids-count-wrapper {
+    display: flex;
+    align-self: center;
+    margin: 0;
+}
+
+.plus,
+.minus {
+    width: 40px;
+    box-sizing: border-box;
+    border: none;
+    text-align: center;
+
+}
+
+.plus {
+    background-image: url("../images/modal/plus.svg");
+    width: 40px;
+    height: 51px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0 4px 4px 0;
+}
+
+.minus {
+    background-image: url("../images/modal/minus.svg");
+    width: 40px;
+    height: 51px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px 0 0 4px;
+}
+
+.kids-count-input,
+.adults-count-input
+ {
+    font-family: PT Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    border: none;
+    width: 31px;
+    padding: 14px 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.kids-count-input:hover,
+.adults-count-input:hover,
+.plus:hover,
+.minus:hover {
+    background-color:#E6E6E6;
+}
+
+.kids-count-input:focus,
+.adults-count-input:focus,
+.plus:focus,
+.minus:focus {
+    background-color:#E6E6E6;
+    outline: solid 3px #83B3D3;
+}
+
+.kids-count-input:active,
+.adults-count-input:active,
+.plus:active,
+.minus:active {
+    outline: solid 2px #000000;
+
+}
+
+.modal-input,
+.plus,
+.minus {
+    margin: 0;
+    background-color: #F2F2F2;
+    padding: 14px 10px;
+
+}
+
+.button.modal-search-button {
+    width: 100%;
+    border-radius: 10px;
+    padding: 18px;
+    margin-top: 48px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
 
 }

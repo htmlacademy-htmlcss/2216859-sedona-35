@@ -198,7 +198,7 @@
     </footer>
     </div>
     <!-- modal window. search filter -->
-<div class="modal-container">
+<div class="modal-container modal-container-close">
   <div class="modal modal-search">
     <button class="modal-close-button">
       <span class="visually-hidden">Закрыть</span>
@@ -208,39 +208,33 @@
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
       <p class="field-group">
         <label class="date-input" for="checkin-date">Дата заезда:</label>
-        <input class="check-in-date date" type="text" id="checkin-date" name="check-in" value="27 апеля 2020">
+        <input class="check-in-date date" type="text" id="checkin-date" name="check-in" value="27 апреля 2020">
+        <span class="error-message">Мы не можем отправить вас в прошлое.</span>
       </p>
       <p class="field-group">
         <label class="date-input" for="checkout-date">Дата выезда:</label>
         <input class="check-out-date date" type="text" id="checkout-date" name="check-out" value="1 сентября 2023">
+        <span class="message">На эти даты есть свободные номера. Пока есть.</span>
       </p>
-      <p class="field-group visitors">
-        <label class="adults-count" for="adults-count-input">Взрослые</label>
-        <div class="adult-count-wrapper">
-          <button class="minus">
-            <span class="visually-hidden">Минус</span>
-          </button>
+      <div class="visitor-counts">
+        <label class="adults-count" for="adults-count-input">Взрослые:</label>
+        <p class="adult-count-wrapper">
+            <span class="minus"></span>
           <input class="adults-count-input modal-input" type="text" value="2" id="adults-count-input" name="adults count" required>
-          <button class="puls">
-            <span class="visually-hidden">Плюс</span>
-          </button>
-        </div>
-        <label class="kids-count" for="kids-count-input">Дети</label>
-        <div class="kids-count-wrapper">
-          <button class="minus">
-            <span class="visually-hidden">Минус</span>
-          </button>
-          <input class="kids-count-input modal-input" type="text" value="2" id="kids-count-input" name="kids count" required>
-          <button class="puls">
-            <span class="visually-hidden">Плюс</span>
-          </button>
-        </div>
-        <a class="button modal-button" href="#">Найти</a>
+            <span class="visually-hidden">+</span>
+            <span class="plus"></span>
       </p>
+        <label class="kids-count" for="kids-count-input">Дети:</label>
+        <p class="kids-count-wrapper">
+            <span class="minus"></span>
+          <input class="kids-count-input modal-input" type="text" value="19" id="kids-count-input" name="kids count" required>
+            <span class="plus"></span>
+        </p>
+    </div>
+        <button class="button modal-search-button" type="submit">Найти</button>
     </form>
     </section>
   </div>
 </div>
-
   </body>
 </html>
