@@ -1471,6 +1471,21 @@ margin-right:8px;
 
 }
 
+.field-group {
+    position: relative;
+}
+
+.calendar {
+    position: absolute;
+    background-image: url("../images/modal/calendar.svg");
+    width:16px;
+    height: 15px;
+    top: 16px;
+    right: 22px;
+    fill: #000000;
+    opacity: 0.3;
+}
+
 .error-message {
     grid-row: 2/3;
     grid-column: 2/3;
