@@ -18,7 +18,7 @@
 body {
     min-width: 1280px;
     min-height: 100%;
-    font-family: "PT Sans", sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -57,7 +57,6 @@ body {
     background-color: #82B3D3;
     text-decoration: none;
     text-transform: uppercase;
-    /* border-radius: 4px; */
     border-color: #82B3D3;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -76,7 +75,7 @@ body {
 .navigation-link-user:focus,
 .more:focus {
     background-color: #615048;
-    border: solid 3px #83B3D3;
+    border: solid 3px #83B3D3 transparent;
 }
 
 .hotels-search-button:active,
@@ -100,7 +99,7 @@ body {
 .button-favorite:focus,
 .pagination-link:focus {
     background-color: #68A2CA;
-    border: solid 3px #83B3D3;
+    border: solid 3px #83B3D3 transparent;
 }
 
 .subscription-button:active,
@@ -117,7 +116,7 @@ body {
 
 .button-active:focus {
     background-color: #6C9E42;
-    border: solid 3px #83B3D3;
+    border: solid 3px #83B3D3 transparent;
 }
 
 .pagination-current:hover {
@@ -348,7 +347,7 @@ body {
     background-color: #82B3D3;
     width: 175px;
     margin: 0;
-    padding:0 112px;
+    padding:0 111px;
 }
 
 .advantages-description-decorated {
@@ -447,21 +446,21 @@ body {
     position: absolute;
     background-image: url("../images/advantages/housing-icon.svg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 81px;
     width: 75px;
 }
 
 .food-icon {
     background-image: url("../images/advantages/food-icon.svg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 82px;
     width: 75px;
 }
 
 .souvenir-icon {
     background-image:url("../images/advantages/souvenir-icon.svg");
     background-repeat:no-repeat;
-    background-position:center;
+    background-position:center 79px;
 }
 
 .food {
@@ -628,11 +627,11 @@ body {
 }
 
 .field:focus {
-    outline: 3px solid #83B3D3;
+    border: 3px solid #83B3D3 transparent;
 }
 
 .field:active {
-    outline: 3px solid #000000;
+    border: 3px solid #000000 transparent;
 }
 
 .subscription-button {
@@ -771,12 +770,12 @@ body {
 }
 
 .control:focus .control-mark {
-    border: solid 3px rgba(131, 179, 211, 1);
+    border: solid 3px rgba(131, 179, 211, 1) transparent;
     box-sizing: border-box;
 }
 
 .control:focus .control-mark-radio {
-    border: solid 3px rgba(131, 179, 211, 1);
+    border: solid 3px rgba(131, 179, 211, 1) transparent;
     box-sizing: border-box;
 }
 
@@ -906,11 +905,11 @@ body {
 }
 
 .range-toggle:focus {
-    border: solid 2px rgba(131, 179, 211, 1);
+    border: solid 2px rgba(131, 179, 211, 1) transparent;
 }
 
 .range-toggle:active {
-    border: solid 3px rgba(131, 179, 211, 1);
+    border: solid 3px rgba(131, 179, 211, 1) transparent;
 }
 
 .toggle-min {
@@ -982,11 +981,11 @@ body {
 
 .select-control:hover,
 .select-control:focus {
-    border: solid 2px #68A2CA;
+    border: solid 2px #68A2CA transparent;
 }
 
 .select-control:active {
-    border: solid 2px #3F5E72;
+    border: solid 2px #3F5E72 transparent;
 }
 
 .card-grid-toggle {
@@ -1000,19 +999,19 @@ body {
 }
 
 .card-grid-toggle:hover {
-    border: solid 2px #000000;
+    border: solid 2px #000000 transparent;
 }
 
 .card-grid-toggle:focus {
-    border: solid 2px #68A2CA;
+    border: solid 2px #68A2CA transparent;
 }
 
 .card-grid-toggle:active {
-    border: solid 2px #000000;
+    border: solid 2px #000000 transparent;
 }
 
 .card-grid-toggle:nth-child(1) {
-    border: solid 2px #000000;
+    border: solid 2px #000000 transparent;
 }
 
 .card-grid-toggle:not(:last-child) {
@@ -1240,7 +1239,7 @@ margin-right:8px;
     display: block;
     margin: 0;
     padding-top:20px;
-    font-family: "PT Sans", sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-size: 22px;
     line-height: 26px;
     color: #000000;
@@ -1423,13 +1422,13 @@ margin-right:8px;
 }
 
 .modal-close-button:focus {
-    outline: solid 3px #83B3D3;
+    border: solid 3px #83B3D3 transparent;
 }
 
 .modal-title {
     margin: 0;
     margin-bottom: 64px;
-    font-family: "PT Sans", sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
@@ -1470,11 +1469,11 @@ margin-right:8px;
 
 .date:focus {
     background-color:#E6E6E6;
-    outline: solid 3px #83B3D3;
+    border: solid 3px #83B3D3 transparent;
 }
 
 .date:active {
-    outline: solid 2px #000000;
+    border: solid 2px #000000 transparent;
 
 }
 
@@ -1497,7 +1496,7 @@ margin-right:8px;
     grid-row: 2/3;
     grid-column: 2/3;
     padding-left: 20px;
-    font-family: "PT Sans", sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
@@ -1508,7 +1507,7 @@ margin-right:8px;
     grid-row: 2/3;
     grid-column: 2/3;
     padding-left: 20px;
-    font-family: "PT Sans", sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
@@ -1516,7 +1515,7 @@ margin-right:8px;
 }
 
 .date-input {
-    font-family: "PT Sans", sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -1533,7 +1532,7 @@ margin-right:8px;
 
 .adults-count,
 .kids-count {
-    font-family: "PT Sans", sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
@@ -1580,7 +1579,7 @@ margin-right:8px;
 .kids-count-input,
 .adults-count-input
  {
-    font-family: PT Sans;
+    font-family: 'PT Sans', sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 20px;
@@ -1609,7 +1608,7 @@ margin-right:8px;
 .adults-count-input:active,
 .plus:active,
 .minus:active {
-    outline: solid 2px #000000;
+    border: solid 2px #000000 transparent;
 
 }
 
@@ -1633,7 +1632,7 @@ margin-right:8px;
     border-radius: 10px;
     padding: 18px;
     margin-top: 48px;
-    font-family: "PT Sans", sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
