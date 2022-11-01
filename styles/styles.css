@@ -1534,7 +1534,8 @@ margin-right:8px;
 /* modal window. persons and button */
 
 .visitor-counts {
-   display: flex;
+   display: grid;
+   grid-template-columns: 137px 110px 88px 105px 110px;
    align-items: center;
 }
 
@@ -1547,6 +1548,10 @@ margin-right:8px;
     line-height: 24px;
 }
 
+.kids-count {
+    grid-column: 4/5;
+}
+
 .kdis-count-icon {
     position: relative;
     padding-right: 16px;
@@ -1557,10 +1562,6 @@ margin-right:8px;
     display: grid;
     margin-left: auto;
     grid-template-columns: 50px 40px 50px;
-}
-
-.adult-count-wrapper {
-    margin-right: 88px;
 }
 
 .plus,
