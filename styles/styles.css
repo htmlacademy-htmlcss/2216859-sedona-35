@@ -90,7 +90,8 @@ body {
 .apply-filter-button:hover,
 .button-favorite:hover,
 .pagination-link:hover,
-.modal-search-button:hover {
+.modal-search-button:hover,
+.modal-search-button:focus {
     background-color: #68A2CA;
 }
 
@@ -1435,6 +1436,10 @@ margin-right:8px;
     cursor:pointer;
 }
 
+.modal-close-button:focus {
+    outline: solid 3px #83B3D3;
+}
+
 .modal-title {
     margin: 0;
     margin-bottom: 64px;
@@ -1552,7 +1557,7 @@ margin-right:8px;
 .kids-count-wrapper {
     display: grid;
     margin-left: auto;
-    grid-template-columns: 50px 33px 50px;
+    grid-template-columns: 50px 40px 50px;
 }
 
 .adult-count-wrapper {
@@ -1626,6 +1631,12 @@ margin-right:8px;
 
 }
 
+.modal-input::-webkit-outerspin-button,
+.modal-input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+}
+
 .button.modal-search-button {
     width: 100%;
     border-radius: 10px;
@@ -1638,38 +1649,80 @@ margin-right:8px;
 
 }
 
-.tooltip {
+.modal-search-button:active {
+    color:rgba(255, 255, 255, 0.3)
+}
 
+.tooltip {
+    position: absolute;
+    margin-left: 4px;
+    width: 26px;
+    height: 26px;
 }
 
 .tooltip-toggle {
     border: none;
-  background-color: transparent;
-  padding: 0;
-  margin: 0;
-  display: block;
-}
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    display: block;
+    cursor: help;
+  }
 
-.tooltip-icon {
+  .tooltip-icon {
     width: 100%;
     height: 100%;
-    color: #242424;
+    fill: #83B3D3;
     display: block;
   }
 
-.tooltip-toggle:hover .tooltip-icon {
-    color: #AF7842;
+  .tooltip-toggle:hover .tooltip-icon {
+    fill: #68A2CA;
   }
 
-  .tooltip-text {
+  .tooltip-toggle:focus .tooltip-icon {
+    fill: #68A2CA;
+  }
+
+  .tooltip-toggle:active .tooltip-icon {
+    fill: #68A2CA;
+  }
+
+.tooltip-text {
+    position: relative;
     background-color: #333333;
     color: #ffffff;
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
     text-transform: none;
-    padding: 5px 8px;
-    border-radius: 8px;
+    padding: 15px 18px 18px 22px;
+    border-radius: 10px;
     display: block;
     width: 256px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100%;
+    margin-top: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: none;
   }
+
+.tooltip-text::before {
+    position: absolute;
+    background-image: url("../images/modal/trangle.svg");
+    background-repeat: no-repeat;
+    top: -8px;
+    right: 120px;
+    width: 19px;
+    height: 9px;
+    content: "";
+
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
