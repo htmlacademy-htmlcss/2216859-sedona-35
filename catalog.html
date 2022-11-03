@@ -15,7 +15,9 @@
       <header class="page-header">
 <!-- left navigation panel with logo and main menu -->
         <nav class="nav-panel">
-          <img class="sedona-logo" src="/images/header/sedona-logo.svg" width="100" height="50" alt="sedona-logo">
+          <a class="logo-link" href="index.html">
+          <img class="link-sedona-logo" src="/images/header/sedona-logo.svg" width="100" height="50" alt="sedona-logo.">
+        </a>
           <ul class="navigation-list list-reset">
             <li class="navigation-item">
               <a class="navigation-link" href="index.html"> Главная</a>
@@ -35,6 +37,8 @@
             </li>
             <li class="navigation-item-user">
               <a class="navigation-link navigation-link-favorites" href="#"><span class="visually-hidden">Избранное</span></a>
+              <span class="favorite-count">12</span>
+              <span class="visually-hidden">Нравится</span>
             </li>
             <li class="navigation-item-user">
               <a class="button navigation-link-user" href="#">Хочу сюда!</a>
@@ -69,20 +73,23 @@
           <ul class="catalog-filter-list list-reset">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="pool" checked>
-                  Бассейн
+                  <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Бассейн</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="parking" checked>
-                  Парковка
+                  <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Парковка</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="wifi">
-                  Wi-Fi
+                  <input class="visually-hidden control-input" type="checkbox" name="wifi">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Wi-Fi</span>
                 </label>
               </li>
             </ul>
@@ -93,34 +100,49 @@
             <ul class="catalog-filter-type list-reset">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="hotel-type" value="hotel">
-                  Гостиницы
+                  <input class="visually-hidden control-input" type="radio" name="hotel-type" value="hotel">
+                  <span class="control-mark-radio"></span>
+                  <span class="control-label">Гостиница</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="hotel-type" value="motel">
-                  Мотель
+                  <input class="visually-hidden control-input" type="radio" name="hotel-type" value="motel">
+                  <span class="control-mark-radio"></span>
+                  <span class="control-label">Мотель</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="hotel-type" value="apartment">
-                  Апартаменты
+                  <input class="visually-hidden control-input" type="radio" name="hotel-type" value="apartment">
+                  <span class="control-mark-radio"></span>
+                  <span class="control-label">Апартаменты</span>
                 </label>
               </li>
             </ul>
           </fieldset>
 <!-- price range selector -->
-          <div class="price-range">
-          <fieldset class="price">
-            <legend class="price-maxmin">Стоимость,Р</legend>
-            <label for="price-range"></label>
-            <input type="number" placeholder="от" value="0">
-            <input type="number" placeholder="до" value="9000">
-            <input type="range" id="price-range" name="price-range" min="0" max="9000" step="1">
-          </fieldset>
-        </div>
+        <fieldset class="catalog-filter-group catalog-filter-price">
+            <legend class="catalog-filter-title price">Стоимость, &#8381;:</legend>
+          <div class="range">
+              <div class="range-wraper-inputs">
+                <input class="field cost-input cost-min" id="cost-from" type="number" name="cost-from" value="0">
+                <label class="cost-from" for="cost-from">от</label>
+                <input class="field cost-input cost-max" id="cost-to" type="number" name="cost-to" value="9000">
+                <label class="cost-to" for="cost-to">до</label>
+              </div>
+            <div class="range-scale">
+              <div class="range-bar" style="width:226px">
+              <button class="range-toggle toggle-min" type="button">
+                <span class="visually-hidden">Минимальная цена</span>
+              </button>
+              <button class="range-toggle toggle-max" type="button">
+                <span class="visually-hidden">Максимальная цена</span>
+              </button>
+              </div>
+            </div>
+          </div>
+        </fieldset>
 <!-- apply reset buttons -->
           <div class="filter-buttons">
           <button class="button apply-filter-button" type="submit">Применить</button>
@@ -133,8 +155,8 @@
       <div class="sorting-panel">
       <p class="search-results">Найдено гостиниц: 38</p>
       <select class="select-control" aria-label="Сортировка">
-        <option value="popular">Сначала популярные</option>
         <option value="cheap">Сначала дешевые</option>
+        <option value="popular">Сначала популярные</option>
         <option value="expensive">Сначала дорогие</option>
       </select>
 <!-- view options -->
@@ -158,13 +180,13 @@
       <ul class="hotels-list list-reset">
 <!-- hotel card start -->
         <li class="hotel-card">
-          <img class="hotel-card-image" src="/images/catalog/amara-resort.jpg" width="300" height="212" alt="Amara Resort and Spa">
+          <img class="hotel-card-image" src="/images/catalog/amara-resort.jpg" width="300" height="212" alt="Amara Resort and Spa.">
           <a class="product-cards-link" href="#">
             <h3 class="hotel-card-title">Amara Resort &amp; Spa</h3>
           </a>
           <div class="type-price">
           <p class="housing-type">Гостиница</p>
-          <p class="housing-price">От 4000 р</p>
+          <p class="housing-price">От 4000 &#8381;</p>
         </div>
         <div class="card-buttons">
           <a class="more" href="#">Подробнее</a>
@@ -179,13 +201,13 @@
         </li>
 <!-- hotel card end -->
         <li class="hotel-card">
-          <img class="hotel-card-image" src="/images/catalog/villas-at-poco-diablo.jpg" width="300" height="212" alt="Villas at Poco Diablo">
+          <img class="hotel-card-image" src="/images/catalog/villas-at-poco-diablo.jpg" width="300" height="212" alt="Villas at Poco Diablo.">
           <a class="product-cards-link" href="#">
             <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
           </a>
           <div class="type-price">
           <p class="housing-type">Гостиница</p>
-          <p class="housing-price">От 5000 р</p>
+          <p class="housing-price">От 5000 &#8381;</p>
         </div>
           <div class="card-buttons">
           <a class="more" href="#">Подробнее</a>
@@ -199,13 +221,13 @@
         </div>
         </li>
         <li class="hotel-card">
-          <img class="hotel-card-image" src="/images/catalog/desert-quail-inn.jpg" width="300" height="212" alt="Desert Quail Inn">
+          <img class="hotel-card-image" src="/images/catalog/desert-quail-inn.jpg" width="300" height="212" alt="Desert Quail Inn.">
           <a class="product-cards-link" href="#">
             <h3 class="hotel-card-title">Desert Quail Inn</h3>
           </a>
           <div class="type-price">
           <p class="housing-type">Гостиница</p>
-          <p class="housing-price">От 2500 р</p>
+          <p class="housing-price">От 2500 &#8381;</p>
         </div>
         <div class="card-buttons">
           <a class="more" href="#">Подробнее</a>
@@ -219,13 +241,13 @@
         </div>
         </li>
         <li class="hotel-card">
-          <img class="hotel-card-image" src="/images/catalog/green-tree-inn.jpg" width="300" height="212" alt="GreenTree Inn">
+          <img class="hotel-card-image" src="/images/catalog/green-tree-inn.jpg" width="300" height="212" alt="GreenTree Inn.">
           <a class="product-cards-link" href="#">
             <h3 class="hotel-card-title">GreenTree Inn</h3>
           </a>
           <div class="type-price">
           <p class="housing-type">Гостиница</p>
-          <p class="housing-price">От 1500 р</p>
+          <p class="housing-price">От 1500 &#8381;</p>
         </div>
           <div class="card-buttons">
           <a class="more" href="#">Подробнее</a>
@@ -235,7 +257,7 @@
           <p class="hotel-star hotel-star-2">
             <span class="visually-hidden">2 звезды</span>
           </p>
-          <p class="hotel-rating">Рейтинг: 9,5</p>
+          <p class="hotel-rating">Рейтинг: 5,0</p>
         </div>
         </li>
       </ul>
@@ -275,7 +297,7 @@
           method="post"
         >
           <label for="newsletter-email"></label>
-          <input class="field" placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
+          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
           <button class="button subscription-button" type="submit">
             Подписаться
           </button>

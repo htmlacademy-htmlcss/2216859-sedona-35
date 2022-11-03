@@ -15,7 +15,7 @@
     <header class="page-header">
 <!-- left navigation panel with logo and main menu -->
       <nav class="nav-panel">
-        <img class="sedona-logo" src="/images/header/sedona-logo.svg" width="100" height="50" alt="sedona-logo">
+        <img class="sedona-logo" src="/images/header/sedona-logo.svg" width="100" height="50" alt="sedona-logo.">
         <ul class="navigation-list list-reset">
           <li class="navigation-item">
             <a class="navigation-link current-link" href="index.html"> Главная</a>
@@ -35,6 +35,8 @@
           </li>
           <li class="navigation-item-user">
             <a class="navigation-link navigation-link-favorites" href="#"><span class="visually-hidden">Избранное</span></a>
+            <span class="favorite-count">12</span>
+            <span class="visually-hidden">Нравится</span>
           </li>
           <li class="navigation-item-user">
             <a class="button navigation-link-user" href="#">Хочу сюда!</a>
@@ -70,7 +72,7 @@
             </p>
           </li>
           <li class="advantages-list-item-img">
-            <img class="advantages-img" src="/images/advantages/sedona-houses.jpg" width="800" height="384" alt="sedona city photo">
+            <img class="advantages-img" src="/images/advantages/sedona-houses.jpg" width="800" height="384" alt="sedona city photo.">
           </li>
         </ul>
 <!-- second advantages list(line)  -->
@@ -100,7 +102,7 @@
             <img class="advantages-img" src="/images/advantages/devils-bridge.jpg" width="800" height="384" alt="sedona devil's bridge">
           </li>
           <li class="advantages-list-item-decorated">
-            <h3 class="advantages-title-decorated">Там есть мост дьявола</h3>
+            <h3 class="advantages-title-decorated">Там есть<br> мост дьявола</h3>
             <p class="advantages-description-decorated">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
@@ -114,19 +116,19 @@
           <li class="services-list-item">
             <h3 class="service-title housing-icon">Жильё</h3>
             <p class="service-description">
-              Рекомендуем пожить <br> в настоящем мотеле, <br> всё как в кино!
+              Рекомендуем пожить<br>  в настоящем мотеле,<br>всё как в кино!
             </p>
           </li>
           <li class="services-list-item food">
             <h3 class="service-title food-icon">еда</h3>
             <p class="service-description">
-              Всегда заказывайте <br> топовый фирменный бургер, вы не разочаруетесь!
+              Всегда заказывайте <br>топовый фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
           <li class="services-list-item">
             <h3 class="service-title souvenir-icon">сувениры</h3>
             <p class="service-description">
-              Не только китайского, <br> но и настоящего местного производства!
+            Не только китайского, <br> но и настоящего местного производства!
             </p>
           </li>
         </ul>
@@ -148,7 +150,7 @@
         </p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
           <label for="newsletter-email"></label>
-          <input class="field" placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
+          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
           <button class="button subscription-button" type="submit">
             Подписаться
           </button>
@@ -197,5 +199,55 @@
     </div>
     </footer>
     </div>
+    <!-- modal window. search filter -->
+<div class="modal-container modal-container-close">
+  <div class="modal modal-search">
+    <button class="modal-close-button" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+    <section class="modal-content">
+      <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+      <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+      <p class="field-group">
+        <label class="date-input" for="checkin-date">Дата заезда:</label>
+        <input class="check-in-date date" type="text" id="checkin-date" name="check-in" value="27 апреля 2020">
+        <span class="calendar"></span>
+        <span class="error-message">Мы не можем отправить вас в прошлое.</span>
+      </p>
+      <p class="field-group">
+        <label class="date-input" for="checkout-date">Дата выезда:</label>
+        <input class="check-out-date date" type="text" id="checkout-date" name="check-out" value="1 сентября 2023">
+        <span class="calendar"></span>
+        <span class="message">На эти даты есть свободные номера. Пока есть.</span>
+      </p>
+      <div class="visitor-counts">
+        <label class="adults-count" for="adults-count-input">Взрослые:</label>
+        <span class="adult-count-wrapper">
+            <button class="field-button minus" type="button"></button>
+          <input class="adults-count-input modal-input" type="number" value="2" id="adults-count-input" name="adults count" required>
+            <button class="field-button plus" type="button"></button>
+        </span>
+        <span class="kids-count kids-count-icon">
+        <label class="kids-count" for="kids-count-input">Дети:</label>
+        <span class="tooltip">
+          <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-kids">
+            <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="13" cy="13" r="13"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#FFFFFF"/></svg>
+          </button>
+          <span class="tooltip-text" role="tooltip" id="tooltip-label-kids">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+        </span>
+      </span>
+        <span class="kids-count-wrapper">
+          <button class="field-button minus" type="button"></button>
+          <input class="kids-count-input modal-input" type="number" value="2" id="kids-count-input" name="kids count" required>
+          <button class="field-button plus" type="button"></button>
+        </span>
+    </div>
+        <button class="button modal-search-button" type="submit">Найти</button>
+    </form>
+    </section>
+  </div>
+</div>
   </body>
 </html>
