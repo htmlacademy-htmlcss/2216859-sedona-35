@@ -647,7 +647,6 @@ body {
 }
 
 .field:focus {
-  outline: none;
   border: 3px solid #83b3d3;
 }
 
@@ -707,7 +706,7 @@ body {
   color: inherit;
   background-image: url("../images/breadcrumbs/right-arrow.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
 }
 
 .breadcrumbs-link {
@@ -732,6 +731,7 @@ body {
 }
 
 .catalog-filter-title {
+  font-family: "PT Sans", sans-serif;
   padding-bottom: 33px;
   padding-left: 72px;
   font-weight: 700;
@@ -779,7 +779,6 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 4px;
-  border: none;
   background-color: #ffffff;
 }
 
@@ -797,13 +796,13 @@ body {
   opacity: 0.5;
 }
 
-.control:focus .control-mark {
-  border: solid 3px rgba(131, 179, 211, 1);
+control:focus-visible .control-mark {
+  border: solid 3px #83b3d3;
   box-sizing: border-box;
 }
 
 .control:focus .control-mark-radio {
-  border: solid 3px rgba(131, 179, 211, 1);
+  border: solid 3px #83b3d3;
   box-sizing: border-box;
 }
 
@@ -962,7 +961,7 @@ body {
 }
 
 .apply-filter-button {
-  margin-bottom: 33px;
+  margin-bottom: 29px;
   padding: 8px 50px;
   border-radius: 4px;
 }
@@ -977,8 +976,24 @@ body {
   text-transform: uppercase;
   color: inherit;
   background-color: rgba(28, 28, 28, 0);
-  border: none;
+  border: solid 3px transparent;
   cursor: pointer;
+}
+
+.button-reset:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.button-reset:focus {
+  border: solid 3px #83b3d3;
+}
+
+.button-reset:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-reset:disabled {
+  color: rgba(255, 255, 255, 0.2);
 }
 
 /*sorting results and view select*/
@@ -1026,6 +1041,11 @@ body {
 
 .select-control:active {
   border: solid 2px #3f5e72;
+}
+
+.select-control:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  border: solid 2px rgba(0, 0, 0, 0.3);
 }
 
 .card-grid-toggle {
@@ -1503,7 +1523,6 @@ body {
 }
 
 .date:active {
-  outline: none;
   border: solid 2px #000000;
 }
 
@@ -1627,7 +1646,6 @@ body {
 .adults-count-input:focus,
 .plus:focus,
 .minus:focus {
-  outline: none;
   background-color: #e6e6e6;
   border: solid 3px #83b3d3;
 }
@@ -1636,7 +1654,6 @@ body {
 .adults-count-input:active,
 .plus:active,
 .minus:active {
-  outline: none;
   border: solid 2px #000000;
 }
 
