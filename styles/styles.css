@@ -615,7 +615,7 @@ body {
 }
 
 .subscription-text-inner {
-    margin: 0 360px 54px;
+    margin: 0 360px 56px;
     font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-size: 22px;
@@ -1058,7 +1058,7 @@ body {
     border: solid 2px #000000;
 }
 
-.card-grid-toggle:not(:last-child) {
+.card-grid-toggle:not(:nth-child(3n)) {
 margin-right:8px;
 }
 
@@ -1079,7 +1079,10 @@ margin-right:8px;
 
 .search-view {
     display: flex;
-    width:160px;
+    flex-wrap: wrap;
+    width: 160px;
+    padding: 0;
+    margin: 0;
 }
 
 /* hotel cards grid */
@@ -1259,11 +1262,12 @@ margin-right:8px;
 .pagination-container {
     display: flex;
     padding: 0;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
 }
 
 .pagination {
     display: flex;
+    flex-wrap: wrap;
     width: 1060px;
     margin: 0 auto;
     padding: 0;
@@ -1272,6 +1276,7 @@ margin-right:8px;
 
 .pagination-item {
     width: 60px;
+    padding-bottom: 5px;
     text-align: center;
 }
 
@@ -1330,7 +1335,7 @@ margin-right:8px;
     flex-wrap: wrap;
     max-width: 142px;
     margin: 0;
-    padding: 0;
+    padding-top: 3px;
 }
 
 .footer-social-item {
@@ -1372,7 +1377,7 @@ margin-right:8px;
     font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-size: 40px;
-    line-height: 32px;
+    line-height: 40px;
     font-weight: 400;
     text-decoration: none;
     color: #000000;
@@ -1391,13 +1396,19 @@ margin-right:8px;
 }
 
 .phone-link {
-    margin-right: 233px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 333px;
+    margin-right: 235px;
     margin-bottom: 35px;
 }
 
 /* academy logo block */
 
 .htmlacademy-link {
+    display: flex;
+    flex-wrap:wrap;
+    max-width: 115px;
     margin-right: 70px;
     margin-bottom: 35px;
 }
