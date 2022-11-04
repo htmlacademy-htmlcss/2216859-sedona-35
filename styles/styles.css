@@ -150,6 +150,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 464px;
 }
 
 /* right block */
@@ -450,29 +451,32 @@ body {
     background-color: rgba(131, 179, 211, 12%);
 }
 
+.services-list-item:nth-child(2n) {
+    background-color: transparent;
+}
+
 .housing-icon {
     position: absolute;
-    width: 75px;
+    width: 175px;
     background-image: url("../images/advantages/housing-icon.svg");
     background-repeat: no-repeat;
     background-position: center 81px;
 }
 
 .food-icon {
-    width: 75px;
+    position: absolute;
+    width: 175px;
     background-image: url("../images/advantages/food-icon.svg");
     background-repeat: no-repeat;
     background-position: center 82px;
 }
 
 .souvenir-icon {
+    position: absolute;
+    width: 175px;
     background-image:url("../images/advantages/souvenir-icon.svg");
     background-repeat:no-repeat;
     background-position:center 79px;
-}
-
-.food {
-    background-color: #ffffff;
 }
 
 .service-title {
@@ -645,6 +649,7 @@ body {
 }
 
 .field:focus {
+    outline: none;
     border: 3px solid #83b3d3;
 }
 
@@ -653,8 +658,8 @@ body {
 }
 
 .subscription-button {
-    width: 232px;
-    height: 52px;
+    min-width: 232px;
+    min-height: 52px;
     font-size: 20px;
 }
 
@@ -701,7 +706,7 @@ body {
 
 .breadcrumbs-item {
     display:block;
-    width: 7px;
+    min-width: 7px;
     height: 10px;
     margin: 13px 11px 0 0;
     color:inherit;
@@ -875,6 +880,10 @@ body {
     line-height: 24px;
     font-weight: 700;
     border: solid 3px transparent;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+
 }
 
 .cost-input.cost-min {
@@ -890,7 +899,10 @@ body {
 }
 
 .cost-input::-webkit-outerspin-button,
-.cost-input::-webkit-inner-spin-button {
+.cost-input::-webkit-inner-spin-button,
+.cost-input::-moz-inner-spin-button,
+.cost-input::-moz-outerspin-button
+ {
     appearance: none;
     margin: 0;
 }
@@ -1379,7 +1391,7 @@ margin-right:8px;
 }
 
 .phone-link {
-    margin-right: 235px;
+    margin-right: 233px;
     margin-bottom: 35px;
 }
 
@@ -1418,6 +1430,7 @@ margin-right:8px;
     display: none;
 }
 
+
 .modal {
     position: relative;
     margin: auto;
@@ -1428,8 +1441,9 @@ margin-right:8px;
 
 .modal-search {
     border-radius: 30px;
-    width: 717px;
+    min-width: 717px;
     box-sizing: border-box;
+
 }
 
 .modal-close-button {
@@ -1464,18 +1478,13 @@ margin-right:8px;
 }
 
 .field-group {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 440px;
-    grid-template-rows: 48px 21px;
-    margin: 0;
     margin-bottom: 23px;
 }
 
 /* modal window. dates */
-
-.date-input {
-    align-self: center;
-}
 
 .date {
     padding:12px 20px;
@@ -1502,10 +1511,6 @@ margin-right:8px;
 .date:active {
     outline: none;
     border: solid 2px #000000;
-}
-
-.field-group {
-    position: relative;
 }
 
 .calendar {
@@ -1542,11 +1547,11 @@ margin-right:8px;
 }
 
 .date-input {
+    align-self: center;
     font-family: "PT Sans", sans-serif;
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
-    align-content: center;
 }
 
 /* modal window. persons and button */
@@ -1614,6 +1619,9 @@ margin-right:8px;
     padding: 14px 10px;
     box-sizing: border-box;
     text-align: center;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 .kids-count-input:hover,
