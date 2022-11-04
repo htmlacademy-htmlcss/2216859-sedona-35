@@ -893,9 +893,7 @@ body {
 }
 
 .cost-input::-webkit-outerspin-button,
-.cost-input::-webkit-inner-spin-button,
-.cost-input::-moz-inner-spin-button,
-.cost-input::-moz-outerspin-button {
+.cost-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
