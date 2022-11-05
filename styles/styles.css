@@ -18,6 +18,7 @@
 body {
   min-width: 1280px;
   min-height: 100%;
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -319,6 +320,7 @@ body {
 .advantages-img {
   width: 100%;
   height: auto;
+  background-color: #82b3d3;
   object-fit: cover;
 }
 
@@ -788,7 +790,6 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: none;
   background-color: #ffffff;
 }
 
@@ -796,14 +797,9 @@ body {
   opacity: 0.5;
 }
 
-control:focus-visible .control-mark {
-  border: solid 3px #83b3d3;
-  box-sizing: border-box;
-}
-
-.control:focus .control-mark-radio {
-  border: solid 3px #83b3d3;
-  box-sizing: border-box;
+.control-input:focus + .control-mark,
+.control-input:focus + .control-mark-radio {
+  outline: solid 3px #83b3d3;
 }
 
 .control:active {
